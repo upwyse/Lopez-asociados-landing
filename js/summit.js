@@ -97,17 +97,44 @@ const initHeroVideo = () => {
   }
 };
 
-/* Ejes: la línea se dibuja una vez, al entrar en pantalla */
+/* Ejes: un panel abierto a la vez; se abre el primero al entrar en pantalla */
 const initAxes = () => {
-  const axes = document.getElementById('axes');
-  if (!axes) return;
-  if (!('IntersectionObserver' in window)) { axes.classList.add('seen'); return; }
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach((en) => {
-      if (en.isIntersecting) { axes.classList.add('seen'); io.disconnect(); }
+  const box = document.getElementById('axes');
+  if (!box) return;
+  const panels = [...box.querySelectorAll('.axis')];
+  let current = -1;
+
+  const activate = (i) => {
+    if (i === current) return;
+    current = i;
+    box.dataset.active = String(i);
+    panels.forEach((p, k) => {
+      const on = k === i;
+      p.classList.toggle('on', on);
+      p.querySelector('.axis-hit').setAttribute('aria-expanded', String(on));
     });
-  }, { threshold: 0.25 });
-  io.observe(axes);
+  };
+
+  const canHover = window.matchMedia('(hover: hover) and (min-width: 861px)').matches;
+  panels.forEach((p, i) => {
+    const hit = p.querySelector('.axis-hit');
+    hit.addEventListener('click', () => activate(i));
+    hit.addEventListener('focus', () => activate(i));
+    if (canHover) {
+      let t = null;
+      p.addEventListener('mouseenter', () => { t = window.setTimeout(() => activate(i), 140); });
+      p.addEventListener('mouseleave', () => window.clearTimeout(t));
+    }
+  });
+
+  if (!('IntersectionObserver' in window)) { activate(0); return; }
+  const io = new IntersectionObserver((entries) => {
+    if (entries.some((en) => en.isIntersecting)) {
+      io.disconnect();
+      if (current === -1) activate(0);
+    }
+  }, { threshold: 0.35 });
+  io.observe(box);
 };
 
 /* Agenda: sesiones desplegables + filtro mañana/tarde */
