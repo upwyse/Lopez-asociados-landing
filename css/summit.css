@@ -460,19 +460,21 @@ button.slot-row:hover .chev{border-color:var(--ink);}
 .no-js .slot-body{grid-template-rows:1fr; visibility:visible;}
 .no-js .chev{display:none;}
 
-/* ---------- Quiénes participan ---------- */
-.voices{background:var(--navy-950); padding:64px 0;}
-.voices .wrap{display:grid; grid-template-columns:auto minmax(0,1fr); gap:24px 64px; align-items:center;}
-.voices p{font-family:var(--serif); font-size:clamp(20px,2vw,26px); color:#fff; line-height:1.3;}
-.voices ul{display:flex; flex-wrap:wrap; gap:10px 40px;}
-.voices li{
-  display:flex; align-items:center; gap:12px;
-  font-family:var(--serif); font-size:clamp(20px,2vw,27px); color:rgba(255,255,255,.92); font-weight:500; line-height:1.4;
+/* ---------- Quiénes participan (fondo blanco, logos oficiales) ---------- */
+.voices{background:#fff; padding:60px 0 64px; border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+.voices p{
+  font-family:var(--serif); font-size:clamp(20px,2vw,26px); font-weight:600; line-height:1.3;
+  color:var(--ink); margin-bottom:34px;
 }
-.voices li::before{content:""; width:9px; height:9px; background:var(--orange); border-radius:var(--iso-curve-sm); flex-shrink:0;}
+.voices ul{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:28px 48px;}
+.voices li{display:flex; align-items:center;}
+.voices li img{height:44px; width:auto; max-width:170px; object-fit:contain;}
+.voices .logo-name{font-family:var(--serif); font-size:clamp(20px,1.9vw,25px); font-weight:600; color:var(--ink); line-height:1.3;}
 @media (max-width:900px){
-  .voices .wrap{grid-template-columns:1fr; gap:22px;}
-  .voices p{max-width:none;}
+  .voices{padding:44px 0 48px;}
+  .voices p{margin-bottom:26px;}
+  .voices ul{justify-content:flex-start; gap:24px 40px;}
+  .voices li img{height:38px; max-width:140px;}
 }
 
 /* ---------- Registro ---------- */
