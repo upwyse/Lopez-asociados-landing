@@ -277,11 +277,8 @@ button{font:inherit; color:inherit;}
 }
 
 /* ---------- Ejes: tres tarjetas claras ---------- */
-.axes-head{
-  display:flex; justify-content:space-between; align-items:flex-end; gap:24px 64px; flex-wrap:wrap;
-  margin-bottom:44px;
-}
-.axes-head .section-sub{margin:0; max-width:42ch;}
+.axes-head{margin-bottom:44px; text-align:left;}
+.axes-head .section-sub{margin:20px 0 0; max-width:60ch;}
 #ejes.band{padding:92px 0 100px;}
 
 .axes{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px;}
