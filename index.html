@@ -12,7 +12,7 @@
 <meta name="theme-color" content="#181e49">
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="css/summit.css?v=13672e23">
+<link rel="stylesheet" href="css/summit.css?v=0e320333">
 <script>document.documentElement.classList.remove('no-js');
 /* Logos de participantes: prueba otras extensiones y, si no hay archivo, muestra el nombre */
 window.logoFallback=function(img){var t=(img.dataset.tried||'svg').split(','),o=['svg','png','jpg','jpeg','webp'],n=o.filter(function(x){return t.indexOf(x)<0})[0];if(n){t.push(n);img.dataset.tried=t.join(',');img.src=img.dataset.base+'.'+n;return}var s=document.createElement('span');s.className='logo-name';s.textContent=img.alt;img.replaceWith(s)};
@@ -335,7 +335,7 @@ window.logoFallback=function(img){var t=(img.dataset.tried||'svg').split(','),o=
     <div class="wrap">
       <p id="voices-t">Participan líderes de</p>
       <ul>
-        <li><img src="assets/logos/banco-de-occidente.svg" data-base="assets/logos/banco-de-occidente" alt="Banco de Occidente" height="44" loading="lazy" onerror="logoFallback(this)"></li><li><img src="assets/logos/andi.svg" data-base="assets/logos/andi" alt="ANDI" height="44" loading="lazy" onerror="logoFallback(this)"></li><li><img src="assets/logos/didi.svg" data-base="assets/logos/didi" alt="DiDi" height="44" loading="lazy" onerror="logoFallback(this)"></li><li><img src="assets/logos/pg.svg" data-base="assets/logos/pg" alt="P&amp;G" height="44" loading="lazy" onerror="logoFallback(this)"></li><li><img src="assets/logos/jesuitas.svg" data-base="assets/logos/jesuitas" alt="Congregación Jesuitas" height="44" loading="lazy" onerror="logoFallback(this)"></li>
+        <li><img src="assets/logos/banco-de-occidente.png" data-base="assets/logos/banco-de-occidente" data-tried="png" alt="Banco de Occidente" style="--h:68px" loading="lazy" onerror="logoFallback(this)"></li><li><img src="assets/logos/andi.png" data-base="assets/logos/andi" data-tried="png" alt="ANDI" style="--h:62px" loading="lazy" onerror="logoFallback(this)"></li><li><img src="assets/logos/didi.png" data-base="assets/logos/didi" data-tried="png" alt="DiDi" style="--h:46px" loading="lazy" onerror="logoFallback(this)"></li><li><img src="assets/logos/pg.png" data-base="assets/logos/pg" data-tried="png" alt="P&amp;G" style="--h:46px" loading="lazy" onerror="logoFallback(this)"></li><li><img src="assets/logos/jesuitas.png" data-base="assets/logos/jesuitas" data-tried="png" alt="Congregación Jesuitas" style="--h:74px" loading="lazy" onerror="logoFallback(this)"></li>
       </ul>
     </div>
   </section>

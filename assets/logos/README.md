@@ -1,16 +1,17 @@
 # Logos de participantes
 
-Guarde aquí los logos oficiales, con estos nombres exactos:
+Logos usados en la franja "Participan líderes de". Se muestran a color sobre fondo blanco.
 
 | Organización | Archivo |
 |---|---|
-| Banco de Occidente | `banco-de-occidente.svg` |
-| ANDI | `andi.svg` |
-| DiDi | `didi.svg` |
-| P&G | `pg.svg` |
-| Congregación Jesuitas | `jesuitas.svg` |
+| Banco de Occidente | `banco-de-occidente.png` |
+| ANDI | `andi.png` |
+| DiDi | `didi.png` |
+| P&G | `pg.png` |
+| Congregación Jesuitas | `jesuitas.png` |
 
-- Formato preferido: **SVG**. También se aceptan `.png`, `.jpg` o `.webp` con el mismo nombre.
-- Fondo transparente, versión a color sobre fondo blanco, recortados sin márgenes.
-- Se muestran todos a 44 px de alto. Mientras falte un archivo, la página muestra el nombre de la organización en texto.
-- Obtenga los archivos del kit de marca de cada organización y confirme con ellas que autorizan su uso.
+Para cambiar un logo, reemplace el archivo conservando el nombre (PNG con fondo transparente,
+recortado sin márgenes; también se acepta `.svg`, `.jpg` o `.webp`). El alto de cada uno se
+ajusta en `build`/`index.html` con la variable `--h` de su etiqueta `<img>`.
+
+Confirme con cada organización que autoriza el uso de su logo.

@@ -468,13 +468,13 @@ button.slot-row:hover .chev{border-color:var(--ink);}
 }
 .voices ul{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:28px 48px;}
 .voices li{display:flex; align-items:center;}
-.voices li img{height:44px; width:auto; max-width:170px; object-fit:contain;}
+.voices li img{height:var(--h,44px); width:auto; max-width:230px; object-fit:contain;}
 .voices .logo-name{font-family:var(--serif); font-size:clamp(20px,1.9vw,25px); font-weight:600; color:var(--ink); line-height:1.3;}
 @media (max-width:900px){
   .voices{padding:44px 0 48px;}
   .voices p{margin-bottom:26px;}
   .voices ul{justify-content:flex-start; gap:24px 40px;}
-  .voices li img{height:38px; max-width:140px;}
+  .voices li img{height:calc(var(--h,44px) * .8); max-width:190px;}
 }
 
 /* ---------- Registro ---------- */
