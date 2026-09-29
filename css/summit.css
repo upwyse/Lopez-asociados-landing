@@ -269,17 +269,13 @@ button{font:inherit; color:inherit;}
   background:linear-gradient(150deg, var(--orange) 0%, var(--orange-700) 100%);
   box-shadow:0 40px 70px -40px rgba(207,78,24,.75);
 }
-/* Curvas del isotipo como textura */
-.anniv::before,.anniv::after{
-  content:""; position:absolute; z-index:-1; border-radius:0 100% 0 100%;
-  border:clamp(28px,3vw,44px) solid rgba(255,255,255,.13);
-}
-.anniv::before{width:78%; aspect-ratio:1; right:-22%; bottom:-20%;}
-.anniv::after{width:46%; aspect-ratio:1; right:12%; top:-16%; border-color:rgba(12,16,38,.16);}
+/* Isótipo del logo como gráfico de fondo: la forma azul y la naranja (en blanco) */
+.anniv .iso{position:absolute; z-index:-1; right:4%; bottom:5%; width:66%; height:auto;}
+.anniv .iso-a{fill:#0a1c2f; opacity:.5;}
+.anniv .iso-b{fill:#fff; opacity:.34;}
 .anniv .big{
   font-family:var(--serif); font-weight:700; line-height:.78; letter-spacing:-.07em;
   font-size:clamp(170px,19vw,300px); margin-left:-.04em;
-  text-shadow:0 18px 40px rgba(12,16,38,.25);
 }
 .anniv p{
   max-width:14ch; font-family:var(--serif); font-style:italic; font-weight:500;
@@ -287,8 +283,9 @@ button{font:inherit; color:inherit;}
 }
 
 .intro-copy .section-title{
-  font-size:clamp(34px,4.3vw,60px); line-height:1.08; letter-spacing:-.025em; max-width:18ch;
+  font-size:clamp(32px,3.7vw,56px); line-height:1.1; letter-spacing:-.025em; max-width:none;
 }
+@media (min-width:900px){ .intro-copy .section-title span{display:block; white-space:nowrap;} }
 .intro-copy .body{margin-top:28px; font-size:clamp(17px,1.35vw,19px); max-width:54ch;}
 
 .facts{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0 28px; margin-top:44px;}
@@ -304,7 +301,6 @@ button{font:inherit; color:inherit;}
   .intro{grid-template-columns:1fr; gap:44px;}
   .anniv{min-height:300px; border-radius:0 48px 0 48px;}
   .anniv .big{font-size:clamp(150px,42vw,230px);}
-  .intro-copy .section-title{max-width:none;}
 }
 @media (max-width:480px){
   .facts{gap:0 16px;}
