@@ -463,8 +463,8 @@ button.slot-row:hover .chev{border-color:var(--ink);}
 /* ---------- Quiénes participan (fondo blanco, logos oficiales) ---------- */
 .voices{background:#fff; padding:60px 0 64px; border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
 .voices p{
-  font-family:var(--serif); font-size:clamp(20px,2vw,26px); font-weight:600; line-height:1.3;
-  color:var(--ink); margin-bottom:34px;
+  font-family:var(--serif); font-size:clamp(28px,3.2vw,42px); font-weight:600; line-height:1.2;
+  letter-spacing:-.015em; color:var(--ink); margin-bottom:40px; text-align:center;
 }
 .voices ul{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:28px 48px;}
 .voices li{display:flex; align-items:center;}
@@ -472,8 +472,8 @@ button.slot-row:hover .chev{border-color:var(--ink);}
 .voices .logo-name{font-family:var(--serif); font-size:clamp(20px,1.9vw,25px); font-weight:600; color:var(--ink); line-height:1.3;}
 @media (max-width:900px){
   .voices{padding:44px 0 48px;}
-  .voices p{margin-bottom:26px;}
-  .voices ul{justify-content:flex-start; gap:24px 40px;}
+  .voices p{margin-bottom:30px;}
+  .voices ul{justify-content:center; gap:24px 40px;}
   .voices li img{height:calc(var(--h,44px) * .8); max-width:190px;}
 }
 
@@ -541,7 +541,8 @@ form .btn{margin-top:26px;}
   display:flex; justify-content:space-between; align-items:flex-end; gap:40px; flex-wrap:wrap;
   padding-bottom:46px; margin-bottom:46px; border-bottom:1px solid rgba(255,255,255,.12);
 }
-.foot-top h2{color:#fff; font-size:clamp(24px,2.9vw,38px); max-width:20ch; line-height:1.2;}
+.foot-top h2{color:#fff; font-size:clamp(22px,calc(2.9vw - 2px),36px); max-width:20ch; line-height:1.2;}
+@media (min-width:900px){ .foot-top h2{max-width:none; white-space:nowrap;} }
 .foot-grid{display:grid; grid-template-columns:1.7fr 1fr 1fr 1fr; gap:44px;}
 .foot-grid img{height:40px; width:auto; margin-bottom:20px;}
 .foot-grid p{font-size:14px; max-width:34ch; line-height:1.75;}
