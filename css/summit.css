@@ -279,6 +279,12 @@ button{font:inherit; color:inherit;}
 /* ---------- Ejes: tres tarjetas claras ---------- */
 .axes-head{margin-bottom:44px; text-align:left;}
 .axes-head .section-sub{margin:20px 0 0; max-width:60ch;}
+/* Título y descripción, cada uno en una sola línea (pantallas medianas y grandes) */
+@media (min-width:900px){
+  #ejes .axes-head .section-title,
+  #ejes .axes-head .section-sub{max-width:none; white-space:nowrap;}
+  #ejes .axes-head .section-sub{font-size:clamp(15px,1.5vw,17.5px);}
+}
 #ejes.band{padding:92px 0 100px;}
 
 .axes{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px;}
