@@ -13,12 +13,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const CFG = window.SUMMIT || {};
 
-/* Cabecera: transparente sobre el hero, sólida al bajar */
+/* Cabecera: transparente arriba, azul oscura al bajar por el hero,
+   blanca cuando ya se salió del hero */
 const initHeader = () => {
   const head = document.getElementById('head');
+  const hero = document.querySelector('.hero');
   if (!head) return;
-  const onScroll = () => head.classList.toggle('solid', window.scrollY > window.innerHeight - 120);
+  const onScroll = () => {
+    const y = window.scrollY;
+    const heroEnd = hero ? hero.offsetHeight - head.offsetHeight : window.innerHeight;
+    const pastHero = y >= heroEnd;
+    head.classList.toggle('solid', pastHero);
+    head.classList.toggle('navy', !pastHero && y > 8);
+  };
   window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
   onScroll();
 };
 
@@ -28,14 +37,17 @@ const initMobileNav = () => {
   const nav = document.getElementById('nav');
   if (!burger || !nav) return;
 
+  const head = document.getElementById('head');
   const close = () => {
     nav.classList.remove('open');
+    if (head) head.classList.remove('menu-open');
     burger.setAttribute('aria-expanded', 'false');
     burger.setAttribute('aria-label', 'Abrir menú');
     document.body.style.overflow = '';
   };
   burger.addEventListener('click', () => {
     const open = nav.classList.toggle('open');
+    if (head) head.classList.toggle('menu-open', open);
     burger.setAttribute('aria-expanded', String(open));
     burger.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
     document.body.style.overflow = open ? 'hidden' : '';

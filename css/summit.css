@@ -89,10 +89,17 @@ button{font:inherit; color:inherit;}
   border-bottom:1px solid transparent;
   transition:background-color .35s var(--ease), box-shadow .35s var(--ease), border-color .35s var(--ease);
 }
+/* Al bajar por el hero: franja azul oscura, con logo y enlaces blancos */
+.site-head.navy{
+  background:rgba(12,16,38,.96);
+  border-bottom-color:rgba(255,255,255,.08);
+  box-shadow:0 10px 30px -18px rgba(0,0,0,.8);
+}
 .site-head .bar{
   display:flex; align-items:center; justify-content:space-between; gap:24px;
   max-width:1360px; margin:0 auto; padding:18px 32px;
 }
+.site-head .brand{position:relative; z-index:210;}
 .site-head .brand img{height:46px; width:auto; transition:height .3s var(--ease);}
 .site-head .brand .on-dark{display:block;}
 .site-head .brand .on-light{display:none;}
@@ -106,17 +113,26 @@ button{font:inherit; color:inherit;}
 .nav-cta .btn{padding:12px 24px; font-size:14.5px;}
 
 .site-head.solid{
-  background:rgba(255,255,255,.97); backdrop-filter:blur(12px);
+  background:rgba(255,255,255,.98);
   border-bottom-color:var(--line); box-shadow:0 6px 24px -20px rgba(18,22,46,.6);
 }
 .site-head.solid .brand .on-dark{display:none;}
 .site-head.solid .brand .on-light{display:block;}
+.site-head.navy .brand img,
 .site-head.solid .brand img{height:42px;}
 .site-head.solid .nav a{color:var(--ink);}
 
 .burger{display:none; background:none; border:0; padding:8px; cursor:pointer;}
 .burger span{display:block; width:26px; height:2px; background:#fff; margin:5px 0; transition:.25s;}
 .site-head.solid .burger span{background:var(--ink);}
+
+/* Menú móvil abierto: logo blanco y ícono blanco sobre el fondo azul */
+.site-head.menu-open .brand .on-dark{display:block;}
+.site-head.menu-open .brand .on-light{display:none;}
+.site-head.menu-open .burger span{background:#fff;}
+.site-head.menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.site-head.menu-open .burger span:nth-child(2){opacity:0;}
+.site-head.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
 
 @media (max-width:1000px){
   .nav{
@@ -144,24 +160,9 @@ button{font:inherit; color:inherit;}
 .hero::after{
   content:""; position:absolute; inset:0; z-index:-2;
   background:
-    linear-gradient(180deg, rgba(12,16,38,.74) 0%, rgba(12,16,38,.55) 42%, rgba(12,16,38,.94) 100%),
-    linear-gradient(96deg, rgba(24,30,73,.88) 0%, rgba(24,30,73,.34) 62%, rgba(24,30,73,.12) 100%);
+    linear-gradient(180deg, rgba(12,16,38,.62) 0%, rgba(12,16,38,.22) 30%, rgba(12,16,38,.30) 62%, rgba(12,16,38,.88) 100%),
+    linear-gradient(96deg, rgba(20,26,66,.90) 0%, rgba(20,26,66,.72) 42%, rgba(20,26,66,.16) 100%);
 }
-
-/* El 20: la pieza memorable de la página */
-.hero-20{
-  position:absolute; z-index:-1; right:2vw; top:47%;
-  transform:translateY(-68%);
-  font-family:var(--serif); font-weight:700; line-height:.78; letter-spacing:-.07em;
-  font-size:clamp(230px, 40vw, 700px);
-  color:transparent;
-  background:linear-gradient(180deg, rgba(242,96,33,.34) 0%, rgba(242,96,33,0) 78%);
-  -webkit-background-clip:text; background-clip:text;
-  -webkit-text-stroke:clamp(2px,.22vw,4px) rgba(242,96,33,.9);
-  user-select:none; pointer-events:none;
-  opacity:0; animation:rise-20 1.3s .1s var(--ease) forwards;
-}
-@keyframes rise-20{ from{opacity:0; transform:translateY(-63%);} to{opacity:1; transform:translateY(-68%);} }
 
 .hero .wrap{
   position:relative; padding-top:160px; padding-bottom:88px;
@@ -237,8 +238,6 @@ button{font:inherit; color:inherit;}
 @media (max-width:1000px){
   .hero{min-height:auto;}
   .hero .wrap{grid-template-columns:1fr; gap:44px; padding-top:130px; padding-bottom:56px;}
-  .hero-20{top:112px; right:-2vw; transform:none; font-size:clamp(200px,58vw,420px); animation:fade-20 1.2s .1s var(--ease) forwards;}
-  @keyframes fade-20{from{opacity:0;} to{opacity:.85;}}
   .event-card{animation:rise .95s .5s var(--ease) forwards;}
 }
 @media (max-width:520px){
