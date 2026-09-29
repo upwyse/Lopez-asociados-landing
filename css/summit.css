@@ -278,27 +278,41 @@ button{font:inherit; color:inherit;}
 /* ---------- El Summit (introducción) ---------- */
 .intro{display:grid; grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr); gap:80px; align-items:center;}
 
-/* Bloque del aniversario: el "20" como protagonista */
+/* Tarjeta del aniversario: mismo lenguaje que la tarjeta de datos del hero
+   (vidrio oscuro, borde degradado naranja, brillo y marca del isótipo) */
 .anniv{
   position:relative; overflow:hidden; isolation:isolate; color:#fff;
-  min-height:clamp(380px,36vw,500px); padding:clamp(28px,3vw,44px);
+  min-height:clamp(380px,36vw,500px); padding:clamp(28px,3vw,40px);
   display:flex; flex-direction:column; justify-content:space-between;
-  border-radius:0 64px 0 64px;
-  background:linear-gradient(150deg, var(--orange) 0%, var(--orange-700) 100%);
-  box-shadow:0 40px 70px -40px rgba(207,78,24,.75);
+  border:2px solid transparent; border-radius:0 48px 0 48px;
+  background:
+    linear-gradient(160deg, rgba(18,23,58,.98), rgba(9,12,30,1)) padding-box,
+    linear-gradient(140deg, rgba(242,96,33,.95), rgba(255,255,255,.14) 42%, rgba(242,96,33,.5)) border-box;
+  box-shadow:0 34px 70px -28px rgba(12,16,38,.6), 0 0 0 1px rgba(255,255,255,.05);
 }
-/* Isótipo del logo como gráfico de fondo: la forma azul y la naranja (en blanco) */
-.anniv .iso{position:absolute; z-index:-1; right:4%; bottom:5%; width:66%; height:auto;}
-.anniv .iso-a{fill:#0a1c2f; opacity:.5;}
-.anniv .iso-b{fill:#fff; opacity:.34;}
+.anniv::before{
+  content:""; position:absolute; z-index:-1; top:-30%; right:-30%; width:85%; height:100%;
+  pointer-events:none; filter:blur(6px);
+  background:radial-gradient(circle, rgba(242,96,33,.34), transparent 68%);
+}
+/* Isótipo grande, muy tenue, como marca de agua */
+.anniv .iso{position:absolute; z-index:-1; right:-6%; bottom:-4%; width:70%; height:auto; pointer-events:none;}
+.anniv .iso-a{fill:#fff; opacity:.05;}
+.anniv .iso-b{fill:var(--orange); opacity:.17;}
+/* Isótipo pequeño y nítido en la esquina */
+.anniv .iso-mark{position:absolute; top:clamp(24px,2.6vw,34px); right:clamp(24px,2.6vw,34px); width:clamp(56px,5.4vw,72px); height:auto;}
+.anniv .m-a{fill:#fff; opacity:.9;}
+.anniv .m-b{fill:var(--orange);}
 .anniv .big{
   font-family:var(--serif); font-weight:700; line-height:.78; letter-spacing:-.07em;
-  font-size:clamp(170px,19vw,300px); margin-left:-.04em;
+  font-size:clamp(170px,19vw,300px); margin-left:-.04em; color:#fff;
 }
 .anniv p{
-  max-width:14ch; font-family:var(--serif); font-style:italic; font-weight:500;
-  font-size:clamp(22px,2.2vw,30px); line-height:1.25;
+  position:relative; max-width:none; padding-top:20px; border-top:1px solid rgba(255,255,255,.14);
+  font-family:var(--serif); font-style:italic; font-weight:500;
+  font-size:clamp(22px,2.1vw,29px); line-height:1.25;
 }
+.anniv p::before{content:""; position:absolute; left:0; top:-1px; width:44px; height:2px; background:var(--orange);}
 
 .intro-copy .section-title{
   font-size:clamp(32px,3.7vw,56px); line-height:1.1; letter-spacing:-.025em; max-width:none;
@@ -317,7 +331,7 @@ button{font:inherit; color:inherit;}
 
 @media (max-width:900px){
   .intro{grid-template-columns:1fr; gap:44px;}
-  .anniv{min-height:300px; border-radius:0 48px 0 48px;}
+  .anniv{min-height:300px; border-radius:0 40px 0 40px;}
   .anniv .big{font-size:clamp(150px,42vw,230px);}
 }
 @media (max-width:480px){
