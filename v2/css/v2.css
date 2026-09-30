@@ -65,15 +65,17 @@ button{font:inherit; color:inherit;}
 .site-head{position:fixed; top:0; left:0; right:0; z-index:200; background:#fff; border-bottom:.25rem solid #dcdcdc;}
 .bar{max-width:75rem; margin:0 auto; padding:.55rem 2rem; display:flex; align-items:center; gap:2.5rem;}
 .brand img{height:3.25rem; width:auto;}
-.nav{display:flex; align-items:center; gap:2.25rem;}
+.nav{display:flex; align-items:center; gap:2.25rem; margin-left:auto;}
 .nav a{font:500 .9375rem/1 var(--head); text-transform:uppercase; color:var(--ink); padding:.5rem 0; transition:color .2s;}
 .nav a:hover,.nav a.on{color:#f57c00;}
-.round-btn{
-  width:2rem; height:2rem; border-radius:50%; background:var(--orange); display:flex; align-items:center; justify-content:center;
-  margin-left:-.5rem; transition:transform .25s var(--ease), background-color .25s;
+.reg-btn{
+  display:inline-flex; align-items:center; gap:.55rem; flex-shrink:0;
+  padding:.7rem 1.15rem .7rem 1rem; border-radius:999px; background:var(--orange); color:var(--navy);
+  font:600 .8125rem/1 var(--head); letter-spacing:.03em; text-transform:uppercase;
+  transition:transform .25s var(--ease), background-color .25s;
 }
-.round-btn:hover{background:var(--orange-d); transform:scale(1.08);}
-.round-btn svg{width:1rem; height:1rem; fill:none; stroke:var(--navy); stroke-width:2; stroke-linecap:round; stroke-linejoin:round;}
+.reg-btn:hover{background:var(--orange-d); transform:translateY(-1px);}
+.reg-btn svg{width:1.1rem; height:1.1rem; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round;}
 .burger{display:none; background:none; border:0; padding:.5rem; cursor:pointer; margin-left:auto;}
 .burger span{display:block; width:1.5rem; height:2px; background:var(--navy); margin:.3rem 0; transition:.25s;}
 .site-head.menu-open .burger span:nth-child(1){transform:translateY(.55rem) rotate(45deg);}
@@ -81,9 +83,9 @@ button{font:inherit; color:inherit;}
 .site-head.menu-open .burger span:nth-child(3){transform:translateY(-.55rem) rotate(-45deg);}
 
 @media (max-width:1000px){
-  .bar{padding:.55rem 1.25rem; gap:1rem;}
-  .round-btn{display:none;}
-  .burger{display:block;}
+  .bar{padding:.55rem 1.25rem; gap:.75rem;}
+  .reg-btn{margin-left:auto; padding:.6rem .95rem .6rem .85rem;}
+  .burger{display:block; margin-left:0;}
   .nav{
     position:fixed; top:4.6rem; left:0; right:0; flex-direction:column; align-items:flex-start; gap:0;
     background:#fff; padding:.5rem 1.25rem 1.5rem; border-bottom:.25rem solid #dcdcdc;
