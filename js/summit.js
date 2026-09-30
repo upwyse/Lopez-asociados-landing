@@ -1,5 +1,5 @@
 /* =========================================================
-   Summit López & Asociados — comportamiento de la página
+   Summit 2026 · López & Asociados — comportamiento de la página
    ========================================================= */
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
@@ -74,7 +74,8 @@ const initEventInfo = () => {
   if (CFG.date) {
     const d = new Date(CFG.date + 'T12:00:00');
     if (!isNaN(d)) {
-      let label = new Intl.DateTimeFormat('es-CO', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(d);
+      let label = new Intl.DateTimeFormat('es-CO', { weekday: 'long', day: 'numeric', month: 'long' }).format(d);
+      label = label.replace(',', '');
       label = label.charAt(0).toUpperCase() + label.slice(1);
       const days = Math.ceil((d - new Date()) / 86400000);
       const extra = days > 1 ? `Faltan ${days} días` : days === 1 ? 'Es mañana' : days === 0 ? 'Es hoy' : null;
@@ -82,7 +83,7 @@ const initEventInfo = () => {
       set(['ev-date-2'], label);
     }
   }
-  if (CFG.venue) set(['ev-venue', 'ev-venue-2'], CFG.venue);
+  if (CFG.venue) set(['ev-venue', 'ev-venue-2'], CFG.venue, CFG.venueAddress);
   const p = document.getElementById('privacy-link');
   if (p && CFG.privacyUrl) p.href = CFG.privacyUrl;
 };
@@ -156,7 +157,7 @@ const initForm = () => {
     if (!form.checkValidity()) { form.reportValidity(); return; }
 
     const data = Object.fromEntries(new FormData(form));
-    data.evento = 'Summit López & Asociados — 20 años';
+    data.evento = 'Summit 2026 — López & Asociados';
     const btn = form.querySelector('button[type="submit"]');
 
     if (CFG.registrationEndpoint) {
@@ -180,9 +181,9 @@ const initForm = () => {
 
     // Sin endpoint: se abre el correo del usuario con los datos ya escritos
     const to = CFG.registrationEmail || 'abogados@lopezasociados.net';
-    const subject = 'Registro Summit López & Asociados — ' + data.nombre + ' ' + data.apellido;
+    const subject = 'Registro Summit 2026 — ' + data.nombre + ' ' + data.apellido;
     const body = [
-      'Solicitud de registro al Summit López & Asociados (20 años)',
+      'Solicitud de registro al Summit 2026 de López & Asociados',
       '',
       'Nombre: ' + data.nombre + ' ' + data.apellido,
       'Correo: ' + data.email,

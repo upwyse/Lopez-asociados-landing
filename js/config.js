@@ -1,15 +1,17 @@
 /* =========================================================
    CONFIGURACIÓN DEL SUMMIT
-   Edite solo este archivo para publicar fecha, sede y el
+   Edite solo este archivo para cambiar fecha, sede y el
    envío del formulario. El resto de la página se ajusta sola.
+   (Si cambia la fecha o la sede, actualice también los textos
+   iniciales del HTML: buscar "Club El Nogal" y "23 de octubre".)
    ========================================================= */
 window.SUMMIT = {
-  // Fecha del evento en formato AAAA-MM-DD (ej.: '2026-11-12').
-  // Mientras sea null, la página muestra "Fecha por anunciar".
-  date: null,
+  // Fecha del evento en formato AAAA-MM-DD.
+  date: '2026-10-23',
 
-  // Sede (ej.: 'Hotel X, Bogotá'). Mientras sea null, muestra "Sede por anunciar".
-  venue: null,
+  // Sede y dirección.
+  venue: 'Club El Nogal',
+  venueAddress: 'AK 7 #78-96, Bogotá',
 
   // Correo que recibe las inscripciones cuando NO hay endpoint.
   registrationEmail: 'abogados@lopezasociados.net',

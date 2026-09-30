@@ -1,6 +1,6 @@
-# Summit López & Asociados — Landing (20 años)
+# Summit 2026 · López & Asociados — Landing
 
-Landing estática del primer Summit de López & Asociados. Hereda el sistema de
+Landing estática del Summit 2026 de López & Asociados (viernes 23 de octubre, Club El Nogal, Bogotá). Hereda el sistema de
 diseño del sitio nuevo (Source Serif 4 + Roboto, azul de marca, naranja de acento
 y la curva del isotipo). Sin dependencias ni proceso de compilación: funciona
 directo en GitHub Pages.
@@ -15,14 +15,11 @@ Publicada en: https://upwyse.github.io/Lopez-asociados-landing/
 | Textos, sesiones, panelistas | `index.html` (sección `#agenda`) |
 | Colores, tipografías, espacios | `css/summit.css` (variables en `:root`) |
 
-### Publicar la fecha y la sede
-En `js/config.js`:
-
-```js
-date: '2026-11-12',            // AAAA-MM-DD
-venue: 'Nombre del lugar, Ciudad',
-```
-La fecha se muestra en el hero y en el registro, con el conteo "Faltan N días".
+### Fecha y sede
+En `js/config.js` están la fecha (`date`), la sede (`venue`) y la dirección (`venueAddress`).
+La página muestra la fecha con un conteo de días. Si cambian, actualice también los textos
+iniciales de `index.html` (buscar "Club El Nogal" y "23 de octubre") y los datos del
+evento en el bloque `application/ld+json` del `<head>`.
 
 ### Formulario de registro
 - Sin `registrationEndpoint`: al enviar, se abre el correo del usuario con los
