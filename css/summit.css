@@ -309,7 +309,7 @@ button{font:inherit; color:inherit;}
 
 .intro-copy .lead{
   max-width:32ch; color:var(--ink);
-  font-family:var(--serif); font-weight:600; font-size:clamp(1.625rem,2.6vw,2.5rem); line-height:1.25; letter-spacing:-.02em;
+  font-family:var(--serif); font-weight:600; font-size:clamp(1.375rem,calc(2.6vw - 0.25rem),2.25rem); line-height:1.25; letter-spacing:-.02em;
   text-wrap:balance;
 }
 .intro-copy .body{margin-top:1.5rem; font-size:clamp(1.0625rem,1.35vw,1.1875rem); max-width:56ch;}
@@ -326,7 +326,7 @@ button{font:inherit; color:inherit;}
 .fact:first-child{border-left:0; padding-left:0;}
 .fact b{
   font-family:var(--serif); font-weight:700; line-height:.8; letter-spacing:-.05em;
-  font-size:clamp(5rem,9.5vw,10rem);
+  font-size:clamp(4.875rem,calc(9.5vw - 0.125rem),9.875rem);
   background:linear-gradient(180deg, var(--orange) 15%, var(--orange-700) 100%);
   -webkit-background-clip:text; background-clip:text; color:transparent;
 }
@@ -340,7 +340,7 @@ button{font:inherit; color:inherit;}
   .anniv{min-height:18.75rem; border-radius:0 2.5rem 0 2.5rem;}
   .anniv .big{font-size:clamp(7.5rem,min(42vw,46vh),14.375rem);}
   .fact{flex-direction:column; align-items:flex-start; gap:0.875rem; padding:1.5rem 0.875rem;}
-  .fact b{font-size:clamp(3.25rem,16vw,5.5rem);}
+  .fact b{font-size:clamp(3.125rem,calc(16vw - 0.125rem),5.375rem);}
   .fact span{font-size:clamp(0.875rem,3.3vw,1.125rem); max-width:none;}
 }
 /* Celulares: una cifra por fila, numeral grande y etiqueta al lado */
@@ -351,7 +351,7 @@ button{font:inherit; color:inherit;}
     padding:1.25rem 0; border-left:0; border-top:1px solid var(--line);
   }
   .fact:first-child{border-top:0;}
-  .fact b{font-size:4.5rem; min-width:3rem;}
+  .fact b{font-size:4.375rem; min-width:3rem;}
   .fact span{font-size:1.1875rem; max-width:none;}
 }
 
