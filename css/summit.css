@@ -308,7 +308,7 @@ button{font:inherit; color:inherit;}
 .anniv p::before{content:""; position:absolute; left:0; top:-1px; width:2.75rem; height:0.125rem; background:var(--orange);}
 
 .intro-copy .lead{
-  max-width:32ch; color:var(--ink);
+  max-width:none; color:var(--ink);
   font-family:var(--serif); font-weight:600; font-size:clamp(1.375rem,calc(2.6vw - 0.25rem),2.25rem); line-height:1.25; letter-spacing:-.02em;
   text-wrap:balance;
 }
@@ -342,6 +342,10 @@ button{font:inherit; color:inherit;}
   .fact{flex-direction:column; align-items:flex-start; gap:0.875rem; padding:1.5rem 0.875rem;}
   .fact b{font-size:clamp(3.125rem,calc(16vw - 0.125rem),5.375rem);}
   .fact span{font-size:clamp(0.875rem,3.3vw,1.125rem); max-width:none;}
+}
+/* Celulares: el subtítulo baja de tamaño para quedarse en 4 líneas */
+@media (max-width:560px){
+  .intro-copy .lead{font-size:clamp(1rem,4.75vw,1.25rem); letter-spacing:-.015em;}
 }
 /* Celulares: una cifra por fila, numeral grande y etiqueta al lado */
 @media (max-width:560px){
