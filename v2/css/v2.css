@@ -223,6 +223,9 @@ button{font:inherit; color:inherit;}
 .sec-head{text-align:center; margin-bottom:3rem;}
 .h2{font:700 clamp(1.5rem,2.6vw,2.25rem)/1.15 var(--head); text-transform:uppercase; color:var(--navy);}
 .sec-sub{margin:.9rem auto 0; max-width:44rem; font:500 .9375rem/1.7 var(--body); color:#222;}
+@media (min-width:760px){
+  .ejes .sec-sub{max-width:none; white-space:nowrap; font-size:clamp(.78rem,1.65vw,.9375rem);}
+}
 @media (max-width:900px){ .sec{padding:4rem 0;} }
 
 /* ---------- Ejes: tarjetas blancas con sombra ---------- */

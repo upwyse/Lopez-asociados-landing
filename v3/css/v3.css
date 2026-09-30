@@ -194,6 +194,10 @@ button{font:inherit; color:inherit;}
 .head3 p{max-width:44rem; margin:.9rem auto 0; font:500 .9375rem/1.7 var(--body); color:#222;}
 .head3.light h2{color:#fff;}
 .head3.light p{color:rgba(255,255,255,.82);}
+/* Subtítulo de los ejes en una sola línea (desde tableta; en celular baja de línea porque no cabe) */
+@media (min-width:760px){
+  .ejes3 .head3 p{max-width:none; white-space:nowrap; font-size:clamp(.78rem,1.65vw,.9375rem);}
+}
 
 /* ---------- El Summit: tarjeta del 20 + texto ---------- */
 .intro3{position:relative; overflow:hidden; padding:8.5rem 0 5.5rem;}
