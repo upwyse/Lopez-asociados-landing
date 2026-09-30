@@ -9,13 +9,13 @@
 <meta property="og:title" content="Summit 2026 | López &amp; Asociados">
 <meta property="og:description" content="Ideas que inspiran el futuro laboral y empresarial. Viernes 23 de octubre · Club El Nogal, Bogotá. Reserve su lugar.">
 <meta property="og:image" content="https://upwyse.github.io/Lopez-asociados-landing/assets/img/og-summit.jpg">
-<meta name="theme-color" content="#191d4a">
+<meta name="theme-color" content="#0d3059">
 <link rel="icon" href="../assets/img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/v2.css?v=5399d555">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/v2.css?v=e32667de">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Event","name":"Summit 2026","description":"Ideas que inspiran el futuro laboral y empresarial.","startDate":"2026-10-23T08:00:00-05:00","endDate":"2026-10-23T17:00:00-05:00","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"Club El Nogal","address":{"@type":"PostalAddress","streetAddress":"AK 7 #78-96","addressLocality":"Bogotá","addressCountry":"CO"}},"organizer":{"@type":"Organization","name":"López & Asociados","url":"https://www.lopezasociados.net"},"image":"https://upwyse.github.io/Lopez-asociados-landing/assets/img/og-summit.jpg"}</script>
 <script>document.documentElement.classList.remove('no-js');</script>
 </head>
@@ -24,16 +24,18 @@
 <header class="site-head" id="head">
   <div class="bar">
     <a href="#top" class="brand" aria-label="López &amp; Asociados, inicio">
-      <img src="../assets/img/logo-lockup.png" alt="López &amp; Asociados" width="160" height="46">
+      <img src="../assets/img/logo-actual.png" alt="López &amp; Asociados Abogados" width="278" height="102">
     </a>
     <nav class="nav" id="nav" aria-label="Principal">
-      <a href="#summit">El Summit</a>
+      <a href="#top" class="on">El Summit</a>
       <a href="#ejes">Ejes</a>
       <a href="#agenda">Agenda</a>
       <a href="#participan">Participan</a>
       <a href="#registro">Registro</a>
     </nav>
-    <a href="#registro" class="btn btn-primary btn-sm nav-cta">Reservar mi lugar</a>
+    <a href="#registro" class="round-btn" aria-label="Reservar mi lugar" title="Reservar mi lugar">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2"/><path d="M8 2.5v4M16 2.5v4M3 10h18"/></svg>
+    </a>
     <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
   </div>
 </header>
@@ -42,69 +44,81 @@
 
   <!-- HERO -->
   <section class="hero">
-    <svg class="shape shape-tr" viewBox="0 8 225 219" aria-hidden="true" focusable="false"><path class="s1" d="M73 13H210Q219 13 219 22V159A146 146 0 0 0 73 13Z"/><path class="s2" d="M3 77H140Q149 77 149 86V223A146 146 0 0 0 3 77Z"/></svg>
-    <svg class="shape shape-bl" viewBox="0 8 225 219" aria-hidden="true" focusable="false"><path class="s1" d="M73 13H210Q219 13 219 22V159A146 146 0 0 0 73 13Z"/><path class="s2" d="M3 77H140Q149 77 149 86V223A146 146 0 0 0 3 77Z"/></svg>
+    <!-- ondas azules de los bordes, como el sitio -->
+    <svg class="wave wave-l" viewBox="0 0 330 620" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <defs><linearGradient id="gl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a4f7c"/><stop offset="1" stop-color="#28285b"/></linearGradient></defs>
+      <path d="M0 0H150C205 50 200 120 158 172C122 217 150 262 128 322C104 386 62 418 0 438Z" fill="#e7e7ec"/>
+      <path d="M0 40H82C128 88 126 138 98 186C74 228 100 268 78 318C60 358 30 382 0 392Z" fill="url(#gl)"/>
+    </svg>
+    <svg class="wave wave-r" viewBox="0 0 260 520" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <path d="M260 40C215 70 214 130 232 178C252 232 226 280 178 330C144 366 140 420 170 520H260Z" fill="#e7e7ec"/>
+      <path d="M260 120C238 138 236 176 246 208C258 248 240 290 214 324C196 348 198 394 214 430H260Z" fill="url(#gl)"/>
+    </svg>
+    <i class="tri t1"></i><i class="tri t2"></i><i class="tri t3"></i><i class="tri t4"></i><i class="tri t5"></i>
+    <i class="dots d1"></i><i class="dots d2"></i><i class="dots d3"></i>
 
-    <div class="wrap hero-grid">
+    <div class="wrap hero-inner">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="rule"></span>20 años de López &amp; Asociados</p>
-        <h1><span class="a">Summit</span> <span class="b">2026</span></h1>
-        <p class="hero-sub">Ideas que inspiran el futuro laboral y empresarial</p>
-        <p class="hero-lede">Una jornada de conversaciones prácticas sobre la historia de la regulación laboral, la política pública que viene y cómo prepararnos.</p>
-        <div class="cta-row">
-          <a href="#registro" class="btn btn-primary">Reservar mi lugar</a>
-          <a href="#agenda" class="btn btn-ghost">Ver la agenda</a>
+        <div class="h1box">
+          <h1><span class="l1">Summit 2026,</span><span class="l2">Ideas que inspiran el futuro laboral y empresarial</span></h1>
         </div>
-
-        <dl class="ev" aria-label="Datos del evento">
-          <div><dt>Fecha</dt><dd id="ev-date">Viernes 23 de octubre</dd></div>
-          <div><dt>Horario</dt><dd>8:00 a.m. a 5:00 p.m.<small>Almuerzo y coffee break incluidos</small></dd></div>
-          <div><dt>Lugar</dt><dd id="ev-venue">Club El Nogal<small>AK 7 #78-96, Bogotá</small></dd></div>
-        </dl>
+        <p class="hero-p">Una jornada de conversaciones prácticas sobre la historia de la regulación laboral, la política pública que viene y cómo prepararnos.</p>
+        <div class="cta-row">
+          <a href="#registro" class="btn btn-orange">Reservar mi lugar</a>
+          <a href="#agenda" class="btn btn-outline">Ver la agenda</a>
+        </div>
       </div>
 
-      <div class="hero-media">
-        <div class="frame">
-          <video autoplay muted loop playsinline poster="../assets/video/hero-personas-poster.jpg" aria-hidden="true" id="herovideo">
+      <div class="hero-media" aria-hidden="true">
+        <div class="cut">
+          <video autoplay muted loop playsinline poster="../assets/video/hero-personas-poster.jpg" id="herovideo">
             <source src="../assets/video/hero-personas.webm" type="video/webm">
             <source src="../assets/video/hero-personas.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="badge"><b>20</b><span>Años<br>acompañando</span></div>
+      </div>
+    </div>
+
+    <!-- barra en píldora (en el sitio es el buscador); aquí, los datos del evento -->
+    <div class="pill-wrap">
+      <div class="wrap">
+        <dl class="pill" aria-label="Datos del evento">
+          <div class="it"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2"/><path d="M8 2.5v4M16 2.5v4M3 10h18"/></svg><div><dt>Fecha</dt><dd id="ev-date">Viernes 23 de octubre</dd></div></div>
+          <div class="it"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.5V12l3.5 2"/></svg><div><dt>Horario</dt><dd>8:00 a.m. a 5:00 p.m.<small>Almuerzo y coffee break incluidos</small></dd></div></div>
+          <div class="it"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><dt>Lugar</dt><dd id="ev-venue">Club El Nogal<small>AK 7 #78-96, Bogotá</small></dd></div></div>
+          <a href="#registro" class="go" aria-label="Reservar mi lugar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </dl>
       </div>
     </div>
   </section>
 
-  <!-- CIFRAS -->
-  <section class="stats-band" aria-label="El Summit en cifras">
-    <ul class="wrap stats">
-      <li><b>8</b><span>conversaciones prácticas</span></li>
-      <li><b>3</b><span>ejes temáticos</span></li>
-      <li><b>1</b><span>jornada completa</span></li>
-      <li><b>20</b><span>años de López &amp; Asociados</span></li>
-    </ul>
+  <!-- EL SUMMIT -->
+  <section class="statement" id="summit" aria-label="El Summit">
+    <div class="tri-img" aria-hidden="true"><img src="../assets/img/hero-inicio.jpg" alt="" width="1600" height="1067" loading="lazy"></div>
+    <i class="navy-tri" aria-hidden="true"></i>
+    <div class="wrap">
+      <p class="big">En el marco de la celebración de nuestros 20 años, presentamos Summit 2026, un encuentro único de análisis y visión sobre el futuro del mundo laboral.</p>
+      <p class="rest">Nos reuniremos para conversar sobre los desafíos, tendencias y oportunidades que están marcando la agenda laboral, junto a nuestros socios y reconocidos expertos nacionales e internacionales.</p>
+      <p class="rest">Un espacio para compartir perspectivas, generar conversaciones relevantes y explorar las transformaciones que están dando forma al futuro del trabajo.</p>
+    </div>
   </section>
 
-  <!-- EL SUMMIT -->
-  <section class="about" id="summit" aria-label="El Summit">
-    <div class="about-img">
-      <img src="../assets/img/hero-inicio.jpg" alt="" width="1600" height="1067" loading="lazy">
-      <div class="tag20"><b>20</b><p>años acompañando las relaciones laborales del país</p></div>
-    </div>
-    <div class="about-copy">
-      <p class="eyebrow">Sobre el Summit</p>
-      <h2 class="about-lead">En el marco de la celebración de nuestros 20 años, presentamos Summit 2026, un encuentro único de análisis y visión sobre el futuro del mundo laboral.</h2>
-      <p>Nos reuniremos para conversar sobre los desafíos, tendencias y oportunidades que están marcando la agenda laboral, junto a nuestros socios y reconocidos expertos nacionales e internacionales.</p>
-      <p>Un espacio para compartir perspectivas, generar conversaciones relevantes y explorar las transformaciones que están dando forma al futuro del trabajo.</p>
-      <a href="#agenda" class="more">Ver la agenda →</a>
+  <!-- CIFRAS (cuadros naranja y azul, como Novedades laborales) -->
+  <section class="squares" aria-label="El Summit en cifras">
+    <div class="wrap">
+      <ul class="sq-row">
+        <li class="sq orange"><b>8</b><span>conversaciones prácticas</span></li>
+        <li class="sq navy"><b>3</b><span>ejes temáticos</span></li>
+        <li class="sq orange"><b>1</b><span>jornada completa</span></li>
+        <li class="sq navy"><b>20</b><span>años de López &amp; Asociados</span></li>
+      </ul>
     </div>
   </section>
 
   <!-- EJES -->
-  <section class="ejes" id="ejes">
+  <section class="sec ejes" id="ejes">
     <div class="wrap">
-      <header class="sec-head center">
-        <p class="eyebrow">Tres ejes</p>
+      <header class="sec-head">
         <h2 class="h2">Tres ejes para una sola conversación</h2>
         <p class="sec-sub">Del camino recorrido a lo que viene, y de ahí a las decisiones que hoy le corresponden a cada empresa.</p>
       </header>
@@ -113,8 +127,8 @@
         <article class="card">
           <img src="../assets/img/about-office.jpg" alt="" width="1280" height="864" loading="lazy">
           <div class="card-body">
-            <span class="num">Eje 01</span>
             <h3>Historia y comparación</h3>
+            <span class="yr">Eje 01</span>
             <p class="q">¿Qué cambió y cómo lo resolvieron otros países?</p>
             <p>Qué ha cambiado en la regulación laboral y cómo nos comparamos con otros países de la región.</p>
           </div>
@@ -122,8 +136,8 @@
         <article class="card">
           <img src="../assets/img/eje-futuro.jpg" alt="" width="1920" height="1097" loading="lazy">
           <div class="card-body">
-            <span class="num">Eje 02</span>
             <h3>Futuro y construcción de nueva política pública</h3>
+            <span class="yr">Eje 02</span>
             <p class="q">¿Qué prioridades debe tener la política laboral que viene?</p>
             <p>Las prioridades para construir la política laboral que viene, con voces de la academia, los sindicatos y el sector privado.</p>
           </div>
@@ -131,8 +145,8 @@
         <article class="card">
           <img src="../assets/img/eje-preparacion.jpg" alt="" width="1920" height="1280" loading="lazy">
           <div class="card-body">
-            <span class="num">Eje 03</span>
             <h3>¿Cómo nos preparamos?</h3>
+            <span class="yr">Eje 03</span>
             <p class="q">¿Qué puede hacer hoy su empresa?</p>
             <p>Las decisiones prácticas que las empresas pueden tomar hoy: contratación, cumplimiento, negociación colectiva y proceso judicial.</p>
           </div>
@@ -142,23 +156,20 @@
   </section>
 
   <!-- AGENDA -->
-  <section class="agenda" id="agenda">
+  <section class="sec agenda" id="agenda">
     <div class="wrap narrow">
-      <header class="agenda-head">
-        <div>
-          <p class="eyebrow">Agenda</p>
-          <h2 class="h2">Agenda de la jornada</h2>
-          <p class="sec-sub">Ocho conversaciones entre las 8:40 a.m. y las 5:15 p.m. Abra cada sesión para ver el resumen y quiénes participan.</p>
-        </div>
-        <div class="agenda-tools">
-          <div class="chips" role="group" aria-label="Filtrar agenda">
-            <button type="button" data-filter="all" aria-pressed="true">Todo el día</button>
-            <button type="button" data-filter="am" aria-pressed="false">Mañana</button>
-            <button type="button" data-filter="pm" aria-pressed="false">Tarde</button>
-          </div>
-          <button type="button" class="link-btn" id="toggleall">Abrir todas</button>
-        </div>
+      <header class="sec-head">
+        <h2 class="h2">Agenda de la jornada</h2>
+        <p class="sec-sub">Ocho conversaciones entre las 8:40 a.m. y las 5:15 p.m. Abra cada sesión para ver el resumen y quiénes participan.</p>
       </header>
+      <div class="agenda-tools">
+        <div class="chips" role="group" aria-label="Filtrar agenda">
+          <button type="button" data-filter="all" aria-pressed="true">Todo el día</button>
+          <button type="button" data-filter="am" aria-pressed="false">Mañana</button>
+          <button type="button" data-filter="pm" aria-pressed="false">Tarde</button>
+        </div>
+        <button type="button" class="link-btn" id="toggleall">Abrir todas</button>
+      </div>
 
       <section class="block" data-block="am" aria-labelledby="b-am">
         <div class="block-head"><h3 id="b-am">Bloque mañana</h3><span>8:00 a.m. a 2:00 p.m.</span></div>
@@ -345,49 +356,50 @@
   </section>
 
   <!-- PARTICIPAN -->
-  <section class="voices" id="participan" aria-labelledby="voices-t">
-    <svg class="shape shape-v" viewBox="0 8 225 219" aria-hidden="true" focusable="false"><path class="s1" d="M73 13H210Q219 13 219 22V159A146 146 0 0 0 73 13Z"/><path class="s2" d="M3 77H140Q149 77 149 86V223A146 146 0 0 0 3 77Z"/></svg>
+  <section class="sec voices" id="participan" aria-labelledby="voices-t">
+    <i class="orange-tri" aria-hidden="true"></i>
     <div class="wrap">
       <header class="sec-head">
-        <p class="eyebrow light"><span class="dot"></span>Organizaciones participantes</p>
-        <h2 class="h2 light" id="voices-t">Participan líderes de</h2>
+        <h2 class="h2" id="voices-t">Participan líderes de</h2>
+        <p class="sec-sub">Conozca las organizaciones que estarán en la conversación.</p>
       </header>
       <ul class="logos">
-          <li class="logo-card"><div class="logo-box"><img src="../assets/logos/banco-de-occidente.png" alt="Banco de Occidente" loading="lazy"></div><p>Banco de Occidente</p></li>
-          <li class="logo-card"><div class="logo-box"><img src="../assets/logos/andi.png" alt="ANDI" loading="lazy"></div><p>ANDI</p></li>
-          <li class="logo-card"><div class="logo-box"><img src="../assets/logos/didi.png" alt="DiDi" loading="lazy"></div><p>DiDi</p></li>
-          <li class="logo-card"><div class="logo-box"><img src="../assets/logos/pg.png" alt="P&amp;G" loading="lazy"></div><p>P&amp;G</p></li>
-          <li class="logo-card"><div class="logo-box"><img src="../assets/logos/jesuitas.png" alt="Congregación Jesuitas" loading="lazy"></div><p>Congregación Jesuitas</p></li>
+        <li class="logo-card"><div class="logo-box"><img src="../assets/logos/banco-de-occidente.png" alt="Banco de Occidente" loading="lazy"></div><h3>Banco de Occidente</h3><span>Participa en el Summit</span></li>
+        <li class="logo-card"><div class="logo-box"><img src="../assets/logos/andi.png" alt="ANDI" loading="lazy"></div><h3>ANDI</h3><span>Participa en el Summit</span></li>
+        <li class="logo-card"><div class="logo-box"><img src="../assets/logos/didi.png" alt="DiDi" loading="lazy"></div><h3>DiDi</h3><span>Participa en el Summit</span></li>
+        <li class="logo-card"><div class="logo-box"><img src="../assets/logos/pg.png" alt="P&amp;G" loading="lazy"></div><h3>P&amp;G</h3><span>Participa en el Summit</span></li>
+        <li class="logo-card"><div class="logo-box"><img src="../assets/logos/jesuitas.png" alt="Congregación Jesuitas" loading="lazy"></div><h3>Congregación Jesuitas</h3><span>Participa en el Summit</span></li>
       </ul>
+      <p class="center-cta"><a href="#registro" class="btn btn-orange">Reservar mi lugar</a></p>
     </div>
   </section>
 
   <!-- REGISTRO -->
   <section class="register" id="registro">
+    <i class="rt rt1" aria-hidden="true"></i><i class="rt rt2" aria-hidden="true"></i>
     <div class="wrap">
-      <div class="reg-card">
-        <div class="reg-main">
-          <p class="eyebrow">Registro</p>
-          <h2 class="h2 light">Reserve su lugar</h2>
-          <p class="reg-sub">Complete el formulario y nuestro equipo confirmará su inscripción al Summit 2026 de López &amp; Asociados.</p>
+      <header class="sec-head light">
+        <h2 class="h2">Reserve su lugar</h2>
+        <p class="sec-sub">Complete el formulario y nuestro equipo confirmará su inscripción al Summit 2026 de López &amp; Asociados.</p>
+      </header>
 
-          <form id="form" autocomplete="on">
-            <div class="grid">
-              <div class="field"><label for="f-n">Nombre <i>*</i></label><input id="f-n" name="nombre" type="text" autocomplete="given-name" required></div>
-              <div class="field"><label for="f-a">Apellido <i>*</i></label><input id="f-a" name="apellido" type="text" autocomplete="family-name" required></div>
-              <div class="field"><label for="f-e">Correo electrónico <i>*</i></label><input id="f-e" name="email" type="email" autocomplete="email" required></div>
-              <div class="field"><label for="f-t">Teléfono <i>*</i></label><input id="f-t" name="telefono" type="tel" autocomplete="tel" required></div>
-              <div class="field"><label for="f-c">Empresa <i>*</i></label><input id="f-c" name="empresa" type="text" autocomplete="organization" required></div>
-              <div class="field"><label for="f-r">Cargo <i>*</i></label><input id="f-r" name="cargo" type="text" autocomplete="organization-title" required></div>
-            </div>
-            <div class="consent">
-              <input type="checkbox" id="f-p" name="acepta_datos" required>
-              <label for="f-p">He leído y acepto la <a href="https://www.lopezasociados.net" target="_blank" rel="noopener" id="privacy-link">Política de tratamiento de datos</a> de López &amp; Asociados. <i>*</i></label>
-            </div>
-            <button type="submit" class="btn btn-primary">Reservar mi lugar</button>
-            <div class="notice" id="notice" role="status" aria-live="polite"></div>
-          </form>
-        </div>
+      <div class="reg-grid">
+        <form id="form" autocomplete="on">
+          <div class="grid">
+            <div class="field"><label for="f-n">Nombre <i>*</i></label><input id="f-n" name="nombre" type="text" autocomplete="given-name" required></div>
+            <div class="field"><label for="f-a">Apellido <i>*</i></label><input id="f-a" name="apellido" type="text" autocomplete="family-name" required></div>
+            <div class="field"><label for="f-e">Correo electrónico <i>*</i></label><input id="f-e" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="f-t">Teléfono <i>*</i></label><input id="f-t" name="telefono" type="tel" autocomplete="tel" required></div>
+            <div class="field"><label for="f-c">Empresa <i>*</i></label><input id="f-c" name="empresa" type="text" autocomplete="organization" required></div>
+            <div class="field"><label for="f-r">Cargo <i>*</i></label><input id="f-r" name="cargo" type="text" autocomplete="organization-title" required></div>
+          </div>
+          <div class="consent">
+            <input type="checkbox" id="f-p" name="acepta_datos" required>
+            <label for="f-p">He leído y acepto la <a href="https://www.lopezasociados.net" target="_blank" rel="noopener" id="privacy-link">Política de tratamiento de datos</a> de López &amp; Asociados. <i>*</i></label>
+          </div>
+          <button type="submit" class="btn btn-orange">Reservar mi lugar</button>
+          <div class="notice" id="notice" role="status" aria-live="polite"></div>
+        </form>
 
         <aside class="reg-side" aria-label="Datos del evento">
           <div class="blk"><p class="lbl">Fecha</p><p class="val" id="ev-date-2">Viernes 23 de octubre</p></div>
@@ -406,33 +418,33 @@
 </main>
 
 <footer class="site-foot">
+  <i class="ft ft1" aria-hidden="true"></i><i class="ft ft2" aria-hidden="true"></i><i class="ft ft3" aria-hidden="true"></i>
   <div class="wrap foot-grid">
     <div class="foot-brand">
-      <img src="../assets/img/logo-lockup-white.png" alt="López &amp; Asociados" width="140" height="40" loading="lazy">
-      <p>López &amp; Asociados es una firma dedicada a la práctica del derecho laboral y de la seguridad social, con énfasis en la asesoría y representación de empresas.</p>
+      <img src="../assets/img/logo-actual-blanco.png" alt="López &amp; Asociados Abogados" width="308" height="113" loading="lazy">
+      <p>López &amp; Asociados es una firma dedicada a la práctica del derecho laboral y de la seguridad social con énfasis en la asesoría y representación de empresas.</p>
       <p class="mail"><b>Email</b><br><a href="mailto:abogados@lopezasociados.net">abogados@lopezasociados.net</a></p>
     </div>
     <div>
       <h4>Links de interés</h4>
       <ul>
-        <li><a href="https://www.lopezasociados.net" target="_blank" rel="noopener">Sitio de la firma</a></li>
-        <li><a href="#ejes">Ejes</a></li>
+        <li><a href="https://www.lopezasociados.net" target="_blank" rel="noopener">Quiénes somos</a></li>
+        <li><a href="https://www.lopezasociados.net" target="_blank" rel="noopener">Servicios</a></li>
         <li><a href="#agenda">Agenda</a></li>
         <li><a href="#registro">Registro</a></li>
       </ul>
     </div>
-    <div>
-      <h4>Bogotá</h4>
-      <address>Bogotá, Colombia<br>Calle 70 # 7 – 30 piso 6<br>Edificio Séptima Setenta<br>PBX (601) 340 6944<br>FAX (601) 312 0321</address>
-    </div>
-    <div>
-      <h4>Medellín</h4>
-      <address>Medellín, Colombia<br>Carrera 43A #5A – 113<br>Torre Sur Of. 613<br>Edificio One Plaza<br>PBX (604) 204 2220</address>
+    <div class="foot-contact">
+      <h4>Contacto</h4>
+      <div class="two">
+        <address>Bogotá, Colombia<br>Calle 70 # 7 – 30 piso 6<br>Edificio Séptima Setenta<br>PBX (601) 340 6944<br>FAX (601) 312 0321</address>
+        <address>Medellín, Colombia<br>Carrera 43A #5A – 113<br>Torre Sur Of. 613<br>Edificio One Plaza<br>PBX (604) 204 2220</address>
+      </div>
     </div>
   </div>
   <div class="foot-base">
     <div class="wrap">
-      <span>Copyright © 2026 López &amp; Asociados</span>
+      <span>Copyright © 2026 López y Asociados</span>
       <a href="https://www.lopezasociados.net" target="_blank" rel="noopener">Política de tratamiento de datos</a>
       <a class="in" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
     </div>
@@ -441,5 +453,6 @@
 
 <script src="../js/config.js?v=1"></script>
 <script src="../js/summit.js?v=f31e7e5a"></script>
+<script src="js/v2.js?v=bdac0ae1"></script>
 </body>
 </html>
