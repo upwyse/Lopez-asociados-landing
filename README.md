@@ -7,6 +7,17 @@ directo en GitHub Pages.
 
 Publicada en: https://upwyse.github.io/Lopez-asociados-landing/
 
+## Versiones
+
+| Versión | Enlace | Estilo |
+|---|---|---|
+| Principal | https://upwyse.github.io/Lopez-asociados-landing/ | Diseño propio del Summit (Source Serif 4 + Roboto, tarjetas de vidrio) |
+| v2 | https://upwyse.github.io/Lopez-asociados-landing/v2/ | Mismo contenido con el estilo de lopezasociados.net (Poppins + DM Sans, botones rectos, tarjetas blancas con filete naranja) |
+
+La v2 comparte con la principal las imágenes, el video, los logos (`assets/`) y los scripts
+(`js/config.js` y `js/summit.js`), así que fecha, sede y formulario se editan en un solo lugar.
+Sus estilos están en `v2/css/v2.css` y su HTML en `v2/index.html`.
+
 ## Qué editar
 
 | Qué | Dónde |
