@@ -13,10 +13,11 @@ Publicada en: https://upwyse.github.io/Lopez-asociados-landing/
 |---|---|---|
 | Principal | https://upwyse.github.io/Lopez-asociados-landing/ | Diseño propio del Summit (Source Serif 4 + Roboto, tarjetas de vidrio) |
 | v2 | https://upwyse.github.io/Lopez-asociados-landing/v2/ | Mismo contenido con el aspecto actual de lopezasociados.net (logo de cuadros, Poppins + Raleway, azul #0d3059 y naranja #ff9800, ondas y triángulos, píldora de datos, cuadros naranja y azul) |
+| v3 | https://upwyse.github.io/Lopez-asociados-landing/v3/ | Combinación: navbar, hero y pie de la v2; en el medio, la tarjeta de los 20 años, las cifras grandes, los ejes sobre azul y la agenda limpia de la v1, con la paleta y tipografías del sitio real |
 
-La v2 comparte con la principal las imágenes, el video, los logos (`assets/`) y los scripts
+Las versiones v2 y v3 comparten con la principal las imágenes, el video, los logos (`assets/`) y los scripts
 (`js/config.js` y `js/summit.js`), así que fecha, sede y formulario se editan en un solo lugar.
-Sus estilos están en `v2/css/v2.css`, su HTML en `v2/index.html` y el resaltado del menú en `v2/js/v2.js`.
+Estilos, HTML y resaltado del menú de cada una: `v2/` y `v3/` (`css/`, `index.html`, `js/`).
 Los logos de la v2 (`assets/img/logo-actual.png` y `logo-actual-blanco.png`) se extrajeron de una captura del sitio; si tiene el archivo original del logo, conviene reemplazarlos por él.
 
 ## Qué editar
