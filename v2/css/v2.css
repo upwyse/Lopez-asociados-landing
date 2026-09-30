@@ -180,11 +180,11 @@ button{font:inherit; color:inherit;}
 @media (max-width:480px){ .cta-row .btn{width:100%;} .hero-p{letter-spacing:.06em;} }
 
 /* ---------- El Summit: texto grande en Poppins Light ---------- */
-.statement{position:relative; padding:9.5rem 0 4.5rem; text-align:center; overflow:hidden;}
+.statement{position:relative; padding:8.5rem 0 4rem; text-align:center; overflow:hidden;}
 .statement .big{
-  max-width:60rem; margin:0 auto 2.25rem; font:300 clamp(1.5rem,2.7vw,2.375rem)/1.32 var(--head); color:#262626;
+  max-width:50rem; margin:0 auto 1.75rem; font:300 clamp(1.0625rem,1.85vw,1.625rem)/1.5 var(--head); color:#262626; letter-spacing:-.005em;
 }
-.statement .rest{max-width:46rem; margin:0 auto 1rem; font:500 1rem/1.9 var(--body); color:var(--text);}
+.statement .rest{max-width:42rem; margin:0 auto 1rem; font:500 .9375rem/1.85 var(--body); color:var(--text);}
 .tri-img{position:absolute; left:0; top:11rem; width:13rem; height:13rem; clip-path:polygon(0 0,100% 100%,0 100%); background:var(--navy);}
 .tri-img img{width:100%; height:100%; object-fit:cover; opacity:.55;}
 .statement::before{ /* dos líneas finas a lo largo de la hipotenusa */
