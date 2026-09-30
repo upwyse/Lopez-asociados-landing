@@ -307,15 +307,12 @@ button{font:inherit; color:inherit;}
 }
 .anniv p::before{content:""; position:absolute; left:0; top:-1px; width:2.75rem; height:0.125rem; background:var(--orange);}
 
-.intro-copy .section-title{
-  font-size:clamp(2rem,3.7vw,3.5rem); line-height:1.1; letter-spacing:-.025em; max-width:none;
-}
-@media (min-width:900px){ .intro-copy .section-title span{display:block; white-space:nowrap;} }
 .intro-copy .lead{
-  margin-top:1.75rem; max-width:42ch; color:var(--ink);
-  font-family:var(--serif); font-weight:500; font-size:clamp(1.25rem,1.85vw,1.75rem); line-height:1.4; letter-spacing:-.01em;
+  max-width:32ch; color:var(--ink);
+  font-family:var(--serif); font-weight:600; font-size:clamp(1.625rem,2.6vw,2.5rem); line-height:1.25; letter-spacing:-.02em;
+  text-wrap:balance;
 }
-.intro-copy .body{margin-top:1.25rem; font-size:clamp(1.0625rem,1.35vw,1.1875rem); max-width:56ch;}
+.intro-copy .body{margin-top:1.5rem; font-size:clamp(1.0625rem,1.35vw,1.1875rem); max-width:56ch;}
 
 /* Cifras: franja propia, a todo el ancho, con numerales grandes */
 .facts{
