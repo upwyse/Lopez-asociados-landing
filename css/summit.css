@@ -327,6 +327,8 @@ button{font:inherit; color:inherit;}
 .fact b{
   font-family:var(--serif); font-weight:700; line-height:.8; letter-spacing:-.05em;
   font-size:clamp(4.875rem,calc(9.5vw - 0.125rem),9.875rem);
+  /* el degradado solo pinta dentro de la caja: se amplía para que no corte las curvas del 8 y el 3 */
+  padding:0.1em 0.14em 0.1em 0.02em; margin:-0.1em -0.14em -0.1em -0.02em;
   background:linear-gradient(180deg, var(--orange) 15%, var(--orange-700) 100%);
   -webkit-background-clip:text; background-clip:text; color:transparent;
 }
