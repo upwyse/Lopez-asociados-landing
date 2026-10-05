@@ -13,7 +13,7 @@ Publicada en: https://upwyse.github.io/Lopez-asociados-landing/
 |---|---|---|
 | Principal | https://upwyse.github.io/Lopez-asociados-landing/ | Diseño propio del Summit (Source Serif 4 + Roboto, tarjetas de vidrio) |
 | v2 | https://upwyse.github.io/Lopez-asociados-landing/v2/ | Mismo contenido con el aspecto actual de lopezasociados.net (logo de cuadros, Poppins + Raleway, azul #0d3059 y naranja #ff9800, ondas y triángulos, píldora de datos, cuadros naranja y azul) |
-| v3 | https://upwyse.github.io/Lopez-asociados-landing/v3/ | Combinación: navbar, hero y pie de la v2; en el medio, la tarjeta de los 20 años, las cifras grandes, los ejes sobre azul y la agenda limpia de la v1, con la paleta y tipografías del sitio real |
+| v3 | https://upwyse.github.io/Lopez-asociados-landing/v3/ | Identidad visual del Summit 2026 (recursos del evento): Italiana + Poppins + Roboto, azul con foco de luz, dorado, foto de Bogotá, tarjeta "Save the date" y agenda con píldoras de hora |
 
 Las versiones v2 y v3 comparten con la principal las imágenes, el video, los logos (`assets/`) y los scripts
 (`js/config.js` y `js/summit.js`), así que fecha, sede y formulario se editan en un solo lugar.
@@ -54,3 +54,13 @@ git push origin main
 Luego, en GitHub: Settings → Pages → Deploy from a branch → `main` / `(root)`.
 Si el despliegue no se dispara, un commit vacío lo fuerza:
 `git commit --allow-empty -m "rebuild" && git push`.
+
+## Recursos del Summit (v3)
+
+Salen del ZIP de recursos del evento y están en `assets/`:
+
+- `assets/fonts/`: Poppins, Italiana y Roboto (WOFF2, autoalojadas; no dependen de Google Fonts).
+- `assets/brand/bg-azul.webp`: fondo azul con foco de luz.
+- `assets/brand/bogota-pano.jpg` y `bogota-vertical.jpg`: foto de Bogotá recortada para escritorio y celular.
+- `assets/brand/summit-negativo.svg`: logotipo "Summit 2026" en dorado, sin el rectángulo azul de fondo.
+- `assets/brand/logo-nuevo-negativo.svg` (en uso) y `logo-actual-negativo.svg`: logos de López & Asociados con "20 años". Para cambiar de logo, reemplazar la ruta en `v3/index.html` (cabecera y pie).
