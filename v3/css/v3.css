@@ -389,3 +389,12 @@ button.slot-row:hover .chev{border-color:var(--ink);}
   .foot-base .wrap{flex-direction:column; align-items:flex-start; gap:.6rem;}
 }
 @media (max-width:540px){ .foot-grid{grid-template-columns:1fr;} .foot-contact .two{grid-template-columns:1fr;} }
+
+/* Botones del hero: solo en celular (se ocultan desde 768 px: tableta y PC) */
+@media (min-width:768px){
+  .hero .cta-row{display:none;}
+}
+/* PC: sin los botones, la altura del hero la da su contenido y la tarjeta mantiene su separación */
+@media (min-width:901px){
+  .hero{min-height:0; padding-bottom:10rem;}
+}
