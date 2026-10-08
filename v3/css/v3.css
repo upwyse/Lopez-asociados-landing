@@ -398,3 +398,9 @@ button.slot-row:hover .chev{border-color:var(--ink);}
 @media (min-width:901px){
   .hero{min-height:0; padding-bottom:10rem;}
 }
+
+/* Celular: el botón Registro de la cabecera se oculta (el hero ya tiene el suyo); en tableta y PC se mantiene */
+@media (max-width:767px){
+  .reg-btn{display:none;}
+  .burger{margin-left:auto;}
+}
